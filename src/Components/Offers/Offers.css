@@ -1,0 +1,59 @@
+.offers {
+    width: 80%; /* Increase width */
+    height: 80vh; /* Increase height */
+    display: flex;
+    margin: auto;
+    padding: 0px 200px; /* Increase horizontal padding */
+    margin-bottom: 200px; /* Increase bottom margin */
+    background: linear-gradient(180deg, #f0f0f0 0%, #ffffff 60%);
+}
+
+.offers-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.offers-left h1 {
+    color: black;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.offers-left p {
+    color: black;
+    font-size: 20px;
+    font-weight: 500; /* Change font-weight to 700 for bold text */
+    margin-bottom: 40px;
+}
+
+.offers-left button {
+    width: 250px; /* Decreased width */
+    height: 60px; /* Decreased height */
+    border-radius: 30px; /* Adjusted border-radius */
+    background: linear-gradient(90deg, #007bff, #0056b3); /* Gradient background */
+    border: none;
+    color: white;
+    font-size: 20px; /* Decreased font size */
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.offers-left button:hover {
+    background: linear-gradient(90deg, #0056b3, #004080); /* Adjust hover effect with gradient */
+}
+
+
+.offers-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 50px;
+    padding-left: 40px;
+}

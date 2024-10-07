@@ -1,0 +1,86 @@
+/* src/RelatedProducts/RelatedProducts.css */
+
+.relatedproducts {
+    background-color: white; /* White background */
+    padding: 40px; /* Generous padding for spacing */
+    border-radius: 10px; /* Smooth rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    text-align: center; /* Center heading and content */
+    margin: 40px auto; /* Center the entire section */
+    max-width: 1200px; /* Limit width to avoid too wide layouts */
+}
+
+.relatedproducts h1 {
+    font-size: 32px; /* Larger font for the heading */
+    color: #333; /* Darker text for contrast */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.relatedproducts hr {
+    width: 50%; /* Shorter horizontal line */
+    border: 1px solid #ddd; /* Light gray line */
+    margin: 20px auto; /* Center the line */
+}
+
+.relatedproducts-item {
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Space between items */
+    flex-wrap: wrap; /* Allow wrapping to new rows */
+}
+
+.relatedproduct {
+    flex: 1 1 calc(50% - 20px); /* Adjusted for 2 items per row, considering gaps */
+    background-color: white; /* White background for items */
+    border-radius: 10px; /* Smooth rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    text-align: center; /* Center text inside each item */
+    padding: 20px; /* Padding inside each item */
+    transition: transform 0.2s; /* Animation for scaling effect */
+    margin-bottom: 20px; /* Space below each item */
+}
+
+.relatedproduct:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.relatedproduct img {
+    width: 100%; /* Full width for the image */
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Crop images without distortion */
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+.relatedproduct h3 {
+    font-size: 20px; /* Font size for product name */
+    color: #333; /* Dark color for product name */
+    margin: 15px 0; /* Space above and below the name */
+}
+
+.relatedproduct p {
+    font-size: 18px; /* Font size for the price */
+    color: #f25c05; /* Highlighted price color */
+    margin-bottom: 10px; /* Space below the price */
+}
+
+.add-to-cart-btn {
+    background: linear-gradient(135deg, #1E90FF, #00BFFF); /* Blue gradient */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners for the button */
+    padding: 10px 15px; /* Padding inside the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s; /* Animation for background color */
+    margin-top: 10px; /* Space above the button */
+}
+
+.add-to-cart-btn:hover {
+    background: linear-gradient(135deg, #00BFFF, #1E90FF); /* Reverse gradient on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .relatedproduct {
+        flex: 1 1 calc(100% - 20px); /* Stack items on small screens */
+    }
+}

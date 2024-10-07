@@ -1,0 +1,65 @@
+.newsletter {
+    width: 80%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0px 140px;
+    margin-bottom: 150px;
+    background: linear-gradient(180deg, #f0f0f0 0%, #ffffff 60%);
+    gap: 30px;
+}
+
+.newsletter h1 {
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 20%;
+}
+
+.newsletter p {
+    color: #454545;
+    font-size: 20px;
+}
+
+.newsletter div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    width: 730px;
+    height: 70px;
+    border-radius: 80px;
+    border: 1px solid #e3e3e3;
+}
+
+.newsletter input {
+    width: 500px;
+    margin-left: 30px;
+    border: none;
+    outline: none;
+    color: #616161;
+    font-family: Poppins;
+    font-size: 16px;
+}
+
+.newsletter div button {
+    width: 80px; /* Slightly larger width for better button visibility */
+    height: 60px; /* Slightly reduced height to fit the container better */
+    margin-right: 10px; /* Add some space from the edge */
+    border-radius: 50%; /* Rounded button */
+    background: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease; /* Add a smooth hover effect */
+}
+
+.newsletter div button:hover {
+    background-color: #333; /* Darken the button on hover */
+}

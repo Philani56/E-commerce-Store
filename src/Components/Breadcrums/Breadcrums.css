@@ -1,0 +1,12 @@
+.breadcrumbs {
+    display: flex;
+    align-items: center;  /* Center items vertically */
+    gap: 8px;
+    color: #5e5e5e;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px auto;  /* Center horizontally with auto margins */
+    padding: 10px 0; /* Add padding to create space above and below */
+    text-transform: capitalize;
+    width: fit-content; /* Adjusts the width based on content */
+}

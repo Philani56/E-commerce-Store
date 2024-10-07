@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+    box-sizing: border-box; /* Ensure padding and borders are included in the element's width */
+}
+
+.new-collections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100vw; /* Full width of viewport */
+    overflow-y: auto; /* Allow vertical scrolling if content overflows */
+    margin-bottom: 100px; /* Adds white space at the bottom */
+    padding: 0 20px; /* Add some padding to prevent content touching the edges */
+}
+
+.new-collections h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.new-collections hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+
+.collections {
+    display: flex; /* Change to flex display */
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center items horizontally */
+    gap: 30px; /* Space between items */
+    margin-top: 50px;
+    max-width: 1200px; /* Set a max width to control layout size */
+    width: 100%; /* Full width inside the container */
+    padding: 0 20px; /* Add padding to prevent overflow */
+    box-sizing: border-box;
+}
+
+.collection-item {
+    flex: 1 1 200px; /* Allow items to grow and shrink with a base size */
+    max-width: 300px; /* Optional: Limit max width for individual items */
+}

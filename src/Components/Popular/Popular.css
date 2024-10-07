@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+}
+
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100vw; /* Full width of viewport */
+    overflow-y: auto; /* Allow vertical scrolling if content overflows */
+    margin-bottom: 50px; /* Adds white space at the bottom */
+}
+
+.popular h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.popular hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+
+.popular-item {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap; /* Wrap items if they exceed width */
+    justify-content: center; /* Center the items horizontally */
+    width: 100%; /* Ensure container stays within the viewport */
+}

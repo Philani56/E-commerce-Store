@@ -1,0 +1,91 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Softer, larger shadow for a 3D effect */
+    background: linear-gradient(145deg, #e0e5ec, #ffffff, #d3dbe7); /* Light gradient with subtle depth */
+    border-radius: 12px; /* Rounded corners to enhance the 3D look */
+    border: 1px solid rgba(255, 255, 255, 0.6); /* Border for an advanced effect */
+}
+
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo img {
+    width: 80px; /* Adjust to desired size */
+    height: auto; /* Keeps the aspect ratio intact */
+}
+.nav-logo p{
+    color: black;
+    font-size: 38px;
+    font-weight: 600;
+
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    color:white; /* Dark Blue */
+    font-size: 20px;
+    font-weight: 500;
+}
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+    color:white; /* Dark Blue */
+}
+.nav-menu hr {
+    border: none;
+    width: 80%;
+    height: 3px;
+    background: #6bbbd6; /* Light Blue */
+}
+.login-cart{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+.login-cart button {
+    width: 157px;
+    height: 58px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 75px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    background: linear-gradient(145deg, #000000, #434343); /* Black gradient from pure black to dark gray */
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slight shadow for a 3D effect */
+    transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+.login-cart button:hover {
+    background: linear-gradient(145deg, #434343, #000000); /* Reverse gradient on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+.nav-cart-count{
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+    margin-left: -55px;
+    border-radius: 11px;
+    font-size: 14px;
+    background: red;
+    color: white;
+
+}
+
